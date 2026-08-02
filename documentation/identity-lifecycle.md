@@ -1,0 +1,1 @@
+The IAM lab uses Microsoft Entra ID as the centralized identity provider. User identities are created based on organizational roles and departments. Access is assigned through group membership and role-based permissions.
