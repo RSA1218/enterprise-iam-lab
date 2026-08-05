@@ -31,6 +31,12 @@ and support consistent access assignments.
 | Lisa Brown | Marketing | SG-Marketing-Users |
 | Mike Davis | Sales | SG-Sales-Users |
 
+## Group Membership
+
+Example: 
+Created a Security Group "SG-Finance-User" and added Jane to the appropriate group.
+(../screenshots/group-based-membership/01-finance-group-membership.png)
+
 ## Implementation
 
 1. Created security groups in Microsoft Entra ID.
