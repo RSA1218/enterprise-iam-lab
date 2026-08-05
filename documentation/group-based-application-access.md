@@ -11,12 +11,16 @@ Instead of assigning permissions directly to individual users, application acces
 Jane Smith is a Financial Analyst in the Finance department.
 
 A security group named **SG-Finance-Users** was created to represent Finance employees.
+![Create User](../screenshots/group-based-access/01-SG-Finance-Create.png)
 
 A fictional Enterprise Application named **Finance Application** was created.
+![Create User](../screenshots/group-based-access/01-Finance-App.png)
 
 The **SG-Finance-Users** security group was assigned to the Finance Application.
+![Create User](../screenshots/group-based-access/01-Group-Assigned-App.png)
 
 Since Jane Smith is a member of the security group, she automatically inherits access to the application.
+![Create User](../screenshots/group-based-access/01-Jane-FinanceDept-App.png)
 
 ## Implementation
 
