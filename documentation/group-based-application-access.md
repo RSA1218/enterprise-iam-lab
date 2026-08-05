@@ -14,7 +14,7 @@ A security group named **SG-Finance-Users** was created to represent Finance emp
 ![Create User](../screenshots/group-based-access/01-SG-Finance-Create.png)
 
 A fictional Enterprise Application named **Finance Application** was created.
-![Create User](../screenshots/group-based-access/01-Finance-App.png)
+![Create User](../screenshots/group-based-access/01-Finance-App-Create.png)
 
 The **SG-Finance-Users** security group was assigned to the Finance Application.
 ![Create User](../screenshots/group-based-access/01-Group-Assigned-App.png)
