@@ -34,11 +34,8 @@ Demonstrate that:
 
 The **Helpdesk Administrator** role was assigned to **John Smith** using Microsoft Entra ID.
 
-**Screenshot**
 
-```
-![HelpDesk](../screenshots/group-based-access/01-helpdesk-role-assigned.png)
-
+![HelpDesk](../screenshots/role-based-access/01-helpdesk-role-assigned.png)
 ---
 
 ### Step 2 – Validate Authorized Access
@@ -54,8 +51,7 @@ As a Helpdesk Administrator, John successfully reset another user's password.
 **Screenshot**
 
 ```
-![PassworedReset](../screenshots/group-based-access/02-password-reset-success.png)
-
+screenshots/rbac/02-john-password-reset-success.png
 ```
 
 ---
@@ -75,8 +71,7 @@ Because Jane is a standard user and does not have the Helpdesk Administrator rol
 **Screenshot**
 
 ```
-![AccessDenied](../screenshots/role-based-access/03-access-denied.png)
-
+screenshots/rbac/03-jane-access-denied.png
 ```
 
 ---
