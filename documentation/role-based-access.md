@@ -37,7 +37,7 @@ The **Helpdesk Administrator** role was assigned to **John Smith** using Microso
 **Screenshot**
 
 ```
-screenshots/rbac/01-helpdesk-role-assigned.png
+screenshots/role-based-access/01-helpdesk-role-assigned.png
 ```
 
 ---
@@ -55,7 +55,7 @@ As a Helpdesk Administrator, John successfully reset another user's password.
 **Screenshot**
 
 ```
-screenshots/rbac/02-password-reset-success.png
+screenshots/role-based-access/02-password-reset-success.png
 ```
 
 ---
@@ -75,7 +75,7 @@ Because Jane is a standard user and does not have the Helpdesk Administrator rol
 **Screenshot**
 
 ```
-screenshots/rbac/03-access-denied.png
+screenshots/role-based-access/03-access-denied.png
 ```
 
 ---
