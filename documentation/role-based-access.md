@@ -48,11 +48,7 @@ As a Helpdesk Administrator, John successfully reset another user's password.
 
 ✅ Password reset completed successfully.
 
-**Screenshot**
-
-```
-screenshots/rbac/02-john-password-reset-success.png
-```
+![PasswordSuccess](../screenshots/role-based-access/02-password-reset-success.png)
 
 ---
 
@@ -68,12 +64,7 @@ Because Jane is a standard user and does not have the Helpdesk Administrator rol
 
 ❌ Access denied.
 
-**Screenshot**
-
-```
-screenshots/rbac/03-jane-access-denied.png
-```
-
+![Denied](../screenshots/role-based-access/03-access-denied.png)
 ---
 
 # RBAC Flow
