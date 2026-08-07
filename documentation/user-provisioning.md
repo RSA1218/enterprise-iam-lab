@@ -7,7 +7,7 @@ The objective of this lab was to demonstrate the process of provisioning a ficti
 ## User Information
 
 - Name: Jane Smith
-- Username: jane.smith@PractiveIAMLab.onmicrosoft.com
+- Username: jane.smith@PracticeIAMLab.onmicrosoft.com
 - Department: Finance
 - Job Title: Financial Analyst
 
