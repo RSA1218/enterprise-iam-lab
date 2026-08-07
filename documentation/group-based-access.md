@@ -25,7 +25,7 @@ and support consistent access assignments.
 
 | User | Department | Group |
 |---|---|---|
-| Jane Smith | Finance | GG-Finance-Users |
+| Jane Smith | Finance | SG-Finance-Users |
 | John Smith | IT | SG-IT-Users |
 | Sarah Johnson | HR | SG-HR-Users |
 | Lisa Brown | Marketing | SG-Marketing-Users |
