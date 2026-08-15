@@ -63,8 +63,8 @@ Reviewed the sign-in event for Jane Smith in **Entra ID → Sign-in logs → Aut
 
 | Date | Authentication Requirement | Succeeded | Result Detail |
 | --- | --- | --- | --- |
-| 2026-08-15T19:45:33Z | First factor | Yes | First factor requirement satisfied |
-| 2026-08-15T19:45:33Z | MFA | Yes | MFA requirement satisfied |
+| 2026-08-15 02:58:34 | First factor | Yes | First factor requirement satisfied |
+| 2026-08-15 02:58:34 | MFA | Yes | MFA requirement satisfied |
 
 **Conditional Access:**
 
