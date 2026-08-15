@@ -83,7 +83,7 @@ Capture a screenshot of the completed user profile.
 
 **Screenshot:**
 
-![Create User](../screenshots/joiner-mover-leaver/01-joiner-mover-leaver.png)
+![Create User](../screenshots/joiner-mover-leaver/01-joiner-user-created.png.png)
 
 ---
 
