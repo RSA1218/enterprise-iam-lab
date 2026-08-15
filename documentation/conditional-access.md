@@ -72,6 +72,8 @@ Reviewed the sign-in event for Jane Smith in **Entra ID → Sign-in logs → Aut
 | --- | --- |
 | CA-Finance-SAML-MFA | **Success** |
 
+![Conditional Access](../screenshots/conditional-access/01-conditional-access.png)
+
 **Result**
 
 ✅ Sign-in succeeded. MFA was required and completed. Conditional Access policy evaluated to **Success**.
