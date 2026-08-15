@@ -94,12 +94,12 @@ Navigate to:
 
 Add:
 
-`Jane Smith`
+`Dorothy Clark`
 
 The group provides the user's Finance-related access.
 
 ```text
-Jane Smith
+Dorothy Clark
      ↓
 SG-Finance-Users
      ↓
@@ -122,7 +122,7 @@ Navigate to:
 
 Assign the appropriate Finance group/user.
 
-Verify that Jane is authorized to access the application.
+Verify that Dorothy is authorized to access the application.
 
 Capture:
 
@@ -145,7 +145,7 @@ and requires MFA when accessing the SAML Toolkit.
 The resulting access model is:
 
 ```text
-Jane Smith
+Dorothy Clark
      ↓
 SG-Finance-Users
      ↓
@@ -184,7 +184,7 @@ The Joiner process is complete when:
 
 ## Scenario
 
-Jane Smith changes roles from:
+Dorothy Clark changes roles from:
 
 **Financial Analyst → Systems Analyst**
 
@@ -204,7 +204,7 @@ Microsoft identifies employee job-profile changes and group-membership changes a
 
 Navigate to:
 
-**Microsoft Entra ID → Users → Jane Smith → Properties**
+**Microsoft Entra ID → Users → Dorothy Clark → Properties**
 
 Update:
 
@@ -229,14 +229,14 @@ Navigate to:
 
 Remove:
 
-`Jane Smith`
+`Dorothy Clark`
 
 This removes the group-based Finance access associated with the previous role.
 
 ```text
 BEFORE
 
-Jane Smith
+Dorothy Clark
     ↓
 SG-Finance-Users
     ↓
@@ -245,7 +245,7 @@ Finance Access
 
 AFTER
 
-Jane Smith
+Dorothy Clark
     ↓
 SG-IT-Users
     ↓
@@ -268,7 +268,7 @@ Navigate to:
 
 Add:
 
-`Jane Smith`
+`Dorothy Clark`
 
 Capture the new membership.
 
@@ -280,9 +280,9 @@ Capture the new membership.
 
 ## 2.4 Validate Application Access
 
-Test Jane's access to the SAML Toolkit.
+Test Dorothy's access to the SAML Toolkit.
 
-Because Jane is no longer a member of:
+Because Dorothy is no longer a member of:
 
 `SG-Finance-Users`
 
@@ -313,9 +313,9 @@ The Mover process is complete when:
 
 ## Scenario
 
-Jane Smith leaves the organization.
+Dorothy Clark leaves the organization.
 
-The objective is to immediately prevent Jane from authenticating and remove her access to organizational resources.
+The objective is to immediately prevent Dorothy from authenticating and remove her access to organizational resources.
 
 Microsoft identifies disabling accounts, removing group memberships, removing licenses, and removing application/access-package assignments as examples of Leaver tasks.
 
@@ -325,7 +325,7 @@ Microsoft identifies disabling accounts, removing group memberships, removing li
 
 Navigate to:
 
-**Microsoft Entra ID → Users → Jane Smith**
+**Microsoft Entra ID → Users → Dorothy Clark**
 
 Select:
 
@@ -355,7 +355,7 @@ Capture the relevant administrative action if available.
 
 ## 3.3 Remove Group Membership
 
-Remove Jane from organizational security groups.
+Remove Dorothy from organizational security groups.
 
 For example:
 
@@ -378,7 +378,7 @@ Navigate to:
 
 **Enterprise applications → Microsoft Entra SAML Toolkit → Users and groups**
 
-Verify that Jane no longer has application access.
+Verify that Dorothy no longer has application access.
 
 Capture:
 
@@ -388,7 +388,7 @@ Capture:
 
 ## 3.5 Verify Authentication Is Blocked
 
-Attempt to sign in as Jane.
+Attempt to sign in as Dorothy.
 
 The authentication attempt should fail because the account has been disabled.
 
@@ -438,7 +438,7 @@ Security-group membership is used to associate users with role-based access.
 
 ### Least Privilege
 
-When Jane moves from Finance to IT, Finance access is removed rather than allowing her previous permissions to accumulate.
+When Dorothy moves from Finance to IT, Finance access is removed rather than allowing her previous permissions to accumulate.
 
 ### MFA
 
@@ -497,7 +497,7 @@ The completed lab should tell one continuous story:
                     JOINER
                        │
                        ▼
-              Jane Smith Created
+              Dorothy Clark Created
                        │
                        ▼
               SG-Finance-Users
