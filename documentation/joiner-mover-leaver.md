@@ -86,4 +86,475 @@ Capture a screenshot of the completed user profile.
 ![Create User](../screenshots/joiner-mover-leaver/01-joiner-user-created.png)
 
 ---
+## 1.2 Add the User to the Finance Group
+
+Navigate to:
+
+**Microsoft Entra ID → Groups → SG-Finance-Users → Members**
+
+Add:
+
+`Jane Smith`
+
+The group provides the user's Finance-related access.
+
+```text
+Jane Smith
+     ↓
+SG-Finance-Users
+     ↓
+Finance Access
+```
+
+Capture the group membership.
+
+**Screenshot:**
+
+`joiner-finance-group-membership.png`
+
+---
+
+## 1.3 Assign Application Access
+
+Navigate to:
+
+**Enterprise applications → Microsoft Entra SAML Toolkit → Users and groups**
+
+Assign the appropriate Finance group/user.
+
+Verify that Jane is authorized to access the application.
+
+Capture:
+
+`joiner-saml-application-access.png`
+
+---
+
+## 1.4 Enforce MFA
+
+The Conditional Access policy:
+
+`CA-Finance-SAML-MFA`
+
+targets:
+
+`SG-Finance-Users`
+
+and requires MFA when accessing the SAML Toolkit.
+
+The resulting access model is:
+
+```text
+Jane Smith
+     ↓
+SG-Finance-Users
+     ↓
+SAML Toolkit
+     ↓
+CA-Finance-SAML-MFA
+     ↓
+MFA Required
+     ↓
+Access Granted
+```
+
+Capture the successful MFA authentication.
+
+**Screenshot:**
+
+`joiner-mfa-success.png`
+
+---
+
+## Joiner Validation
+
+The Joiner process is complete when:
+
+* [ ] User account exists
+* [ ] User attributes are populated
+* [ ] User belongs to the appropriate security group
+* [ ] Required application access is assigned
+* [ ] MFA is enforced
+* [ ] User can access authorized resources
+* [ ] User cannot access unauthorized resources
+
+---
+
+# 2. Mover — Employee Changes Roles
+
+## Scenario
+
+Jane Smith changes roles from:
+
+**Financial Analyst → Systems Analyst**
+
+and moves from:
+
+**Finance → IT**
+
+This change requires an access review.
+
+The objective is to remove Finance access and provide the appropriate IT access.
+
+Microsoft identifies employee job-profile changes and group-membership changes as Mover scenarios.
+
+---
+
+## 2.1 Update User Attributes
+
+Navigate to:
+
+**Microsoft Entra ID → Users → Jane Smith → Properties**
+
+Update:
+
+| Attribute  | Previous          | New             |
+| ---------- | ----------------- | --------------- |
+| Department | Finance           | IT              |
+| Job Title  | Financial Analyst | Systems Analyst |
+
+Capture the updated user profile.
+
+**Screenshot:**
+
+`mover-user-attributes.png`
+
+---
+
+## 2.2 Remove Finance Group Membership
+
+Navigate to:
+
+**Groups → SG-Finance-Users → Members**
+
+Remove:
+
+`Jane Smith`
+
+This removes the group-based Finance access associated with the previous role.
+
+```text
+BEFORE
+
+Jane Smith
+    ↓
+SG-Finance-Users
+    ↓
+Finance Access
+
+
+AFTER
+
+Jane Smith
+    ↓
+SG-IT-Users
+    ↓
+IT Access
+```
+
+Capture the updated group membership.
+
+**Screenshot:**
+
+`mover-finance-access-removed.png`
+
+---
+
+## 2.3 Add IT Group Membership
+
+Navigate to:
+
+**Groups → SG-IT-Users → Members**
+
+Add:
+
+`Jane Smith`
+
+Capture the new membership.
+
+**Screenshot:**
+
+`mover-it-group-membership.png`
+
+---
+
+## 2.4 Validate Application Access
+
+Test Jane's access to the SAML Toolkit.
+
+Because Jane is no longer a member of:
+
+`SG-Finance-Users`
+
+the Finance-specific access and Conditional Access policy should no longer apply to her based on that group membership.
+
+Review the Entra sign-in logs to confirm the policy evaluation.
+
+This demonstrates **least privilege** and access modification during a role change.
+
+---
+
+## Mover Validation
+
+The Mover process is complete when:
+
+* [ ] Department is updated
+* [ ] Job title is updated
+* [ ] Previous security-group membership is removed
+* [ ] New security-group membership is added
+* [ ] Previous application access is reviewed
+* [ ] New application access is validated
+* [ ] Conditional Access policies are reevaluated
+* [ ] User has access appropriate to the new role
+
+---
+
+# 3. Leaver — Employee Departure
+
+## Scenario
+
+Jane Smith leaves the organization.
+
+The objective is to immediately prevent Jane from authenticating and remove her access to organizational resources.
+
+Microsoft identifies disabling accounts, removing group memberships, removing licenses, and removing application/access-package assignments as examples of Leaver tasks.
+
+---
+
+## 3.1 Disable the User Account
+
+Navigate to:
+
+**Microsoft Entra ID → Users → Jane Smith**
+
+Select:
+
+**Block sign-in → Yes**
+
+This prevents the account from being used for new authentication.
+
+Capture:
+
+`leaver-account-disabled.png`
+
+---
+
+## 3.2 Revoke Active Sessions
+
+Use the available Microsoft Entra controls to revoke the user's active sessions/session credentials.
+
+The objective is to prevent an already-authenticated session from continuing to provide access.
+
+Capture the relevant administrative action if available.
+
+**Screenshot:**
+
+`leaver-session-revocation.png`
+
+---
+
+## 3.3 Remove Group Membership
+
+Remove Jane from organizational security groups.
+
+For example:
+
+* `SG-Finance-Users`
+* `SG-IT-Users`
+
+depending on the scenario.
+
+This removes group-based authorization.
+
+Capture:
+
+`leaver-group-access-removed.png`
+
+---
+
+## 3.4 Remove Application Access
+
+Navigate to:
+
+**Enterprise applications → Microsoft Entra SAML Toolkit → Users and groups**
+
+Verify that Jane no longer has application access.
+
+Capture:
+
+`leaver-application-access-removed.png`
+
+---
+
+## 3.5 Verify Authentication Is Blocked
+
+Attempt to sign in as Jane.
+
+The authentication attempt should fail because the account has been disabled.
+
+Then review:
+
+**Microsoft Entra ID → Monitoring & health → Sign-in logs**
+
+Locate the failed authentication attempt.
+
+Capture:
+
+`leaver-signin-blocked.png`
+
+This provides evidence that the leaver process successfully prevented authentication.
+
+---
+
+# 4. JML Validation Matrix
+
+| Lifecycle | User State        | Group Action            | Application Access | Expected Result        |
+| --------- | ----------------- | ----------------------- | ------------------ | ---------------------- |
+| Joiner    | New employee      | Add Finance group       | Grant SAML access  | Access + MFA           |
+| Mover     | Finance → IT      | Remove Finance / Add IT | Reevaluate access  | Appropriate IT access  |
+| Leaver    | Employee departed | Remove groups           | Remove access      | Authentication blocked |
+
+---
+
+# 5. IAM Controls Demonstrated
+
+This JML scenario demonstrates:
+
+### Identity Lifecycle Management
+
+Users receive, change, and lose access according to their employment lifecycle.
+
+### Provisioning
+
+New users receive the accounts, groups, and applications required for their role.
+
+### Deprovisioning
+
+Users leaving the organization have their access removed.
+
+### RBAC
+
+Security-group membership is used to associate users with role-based access.
+
+### Least Privilege
+
+When Jane moves from Finance to IT, Finance access is removed rather than allowing her previous permissions to accumulate.
+
+### MFA
+
+Finance users are required to complete MFA when accessing the SAML Toolkit.
+
+### Conditional Access
+
+Access policies are evaluated based on user/group and application scope.
+
+### Auditing
+
+Sign-in logs and workflow history provide evidence that access controls operated as expected.
+
+---
+
+# 6. Recommended GitHub Structure
+
+Add the following to the IAM lab:
+
+```text
+documentation/
+├── joiner.md
+├── mover.md
+├── leaver.md
+└── jml-lifecycle.md
+
+screenshots/
+└── jml/
+    ├── joiner/
+    │   ├── joiner-user-created.png
+    │   ├── joiner-finance-group-membership.png
+    │   ├── joiner-saml-application-access.png
+    │   └── joiner-mfa-success.png
+    │
+    ├── mover/
+    │   ├── mover-user-attributes.png
+    │   ├── mover-finance-access-removed.png
+    │   ├── mover-it-group-membership.png
+    │   └── mover-application-access.png
+    │
+    └── leaver/
+        ├── leaver-account-disabled.png
+        ├── leaver-session-revocation.png
+        ├── leaver-group-access-removed.png
+        ├── leaver-application-access-removed.png
+        └── leaver-signin-blocked.png
+```
+
+---
+
+# 7. Evidence-Based JML Demonstration
+
+The completed lab should tell one continuous story:
+
+```text
+                    JOINER
+                       │
+                       ▼
+              Jane Smith Created
+                       │
+                       ▼
+              SG-Finance-Users
+                       │
+                       ▼
+             SAML Toolkit Access
+                       │
+                       ▼
+                   MFA
+                       │
+                       ▼
+                Access Granted
+                       │
+                       ▼
+                  MOVER
+                       │
+                       ▼
+             Finance → IT
+                       │
+             ┌─────────┴─────────┐
+             ▼                   ▼
+      Remove Finance         Add IT Group
+          Access                 Access
+             │                   │
+             └─────────┬─────────┘
+                       ▼
+                 Access Review
+                       │
+                       ▼
+                  LEAVER
+                       │
+                       ▼
+              Disable Account
+                       │
+                       ▼
+              Revoke Sessions
+                       │
+                       ▼
+              Remove Groups
+                       │
+                       ▼
+             Remove App Access
+                       │
+                       ▼
+             Authentication Blocked
+```
+
+## Conclusion
+
+This JML implementation demonstrates how IAM controls can follow an employee throughout the identity lifecycle.
+
+The Joiner process establishes the user's identity and required access. The Mover process modifies access when the user's organizational role changes. The Leaver process removes access and prevents further authentication when the user's employment ends.
+
+Microsoft Entra Lifecycle Workflows can automate many of these tasks through predefined workflow templates and tasks, including adding users to groups, assigning licenses, disabling accounts, removing group memberships, and removing access package assignments.
+
+For a production implementation, workflow execution should also be monitored through workflow history and audit logs. Microsoft records Lifecycle Workflow processing events in its audit capabilities, providing evidence for operational monitoring and compliance.
+
+For this lab, the screenshots and validation tests above provide evidence of the complete **Joiner → Mover → Leaver** lifecycle.
+
 
