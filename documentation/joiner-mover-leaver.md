@@ -255,7 +255,7 @@ Capture the updated group membership.
 
 **Screenshot:**
 
-`mover-finance-access-removed.png`
+![Mover Group](../screenshots/joiner-mover-leaver/mover-it-group-membership.png)
 
 ---
 
