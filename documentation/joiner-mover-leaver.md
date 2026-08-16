@@ -161,7 +161,7 @@ Capture the successful MFA authentication.
 
 **Screenshot:**
 
-`joiner-mfa-success.png`
+![Joiner User](../screenshots/joiner-mover-leaver/04-joiner-mfa-success.png)
 
 ---
 
