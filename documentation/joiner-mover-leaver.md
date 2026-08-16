@@ -216,7 +216,7 @@ Capture the updated user profile.
 
 **Screenshot:**
 
-`mover-user-attributes.png`
+![Mover User](../screenshots/joiner-mover-leaver/05-mover-user-attributes.png)
 
 ---
 
