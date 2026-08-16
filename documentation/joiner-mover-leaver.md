@@ -125,8 +125,7 @@ Assign the appropriate Finance group/user.
 Verify that Dorothy is authorized to access the application.
 
 Capture:
-
-`joiner-saml-application-access.png`
+![Add User](../screenshots/joiner-mover-leaver/03-joiner-saml-application-access.png)
 
 ---
 
