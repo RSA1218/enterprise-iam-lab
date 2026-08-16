@@ -255,7 +255,7 @@ Capture the updated group membership.
 
 **Screenshot:**
 
-![Mover Group](../screenshots/joiner-mover-leaver/mover-it-group-membership.png)
+![Mover Group](../screenshots/joiner-mover-leaver/06-mover-it-group-membership.png)
 
 ---
 
