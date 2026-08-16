@@ -273,7 +273,7 @@ Capture the new membership.
 
 **Screenshot:**
 
-`mover-it-group-membership.png`
+![Create User](../screenshots/joiner-mover-leaver/07-mover-it-group-membership.png)
 
 ---
 
