@@ -110,7 +110,7 @@ Capture the group membership.
 
 **Screenshot:**
 
-`joiner-finance-group-membership.png`
+![Add User](../screenshots/joiner-mover-leaver/02-joiner-finance-group-membership.png)
 
 ---
 
