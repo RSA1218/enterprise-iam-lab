@@ -271,8 +271,6 @@ Add:
 
 Capture the new membership.
 
-**Screenshot:**
-
 ![Create User](../screenshots/joiner-mover-leaver/07-mover-it-group-membership.png)
 
 ---
@@ -370,9 +368,7 @@ Then review:
 
 Locate the failed authentication attempt.
 
-Capture:
-
-`leaver-signin-blocked.png`
+![Leaver Application](../screenshots/joiner-mover-leaver/11-leaver-signin-blocked.png)
 
 This provides evidence that the leaver process successfully prevented authentication.
 
