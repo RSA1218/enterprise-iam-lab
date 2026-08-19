@@ -106,10 +106,6 @@ SG-Finance-Users
 Finance Access
 ```
 
-Capture the group membership.
-
-**Screenshot:**
-
 ![Add User](../screenshots/joiner-mover-leaver/02-joiner-finance-group-membership.png)
 
 ---
@@ -124,7 +120,6 @@ Assign the appropriate Finance group/user.
 
 Verify that Dorothy is authorized to access the application.
 
-Capture:
 ![Add User](../screenshots/joiner-mover-leaver/03-joiner-saml-application-access.png)
 
 ---
@@ -156,11 +151,6 @@ MFA Required
      ↓
 Access Granted
 ```
-
-Capture the successful MFA authentication.
-
-**Screenshot:**
-
 ![Joiner User](../screenshots/joiner-mover-leaver/04-joiner-mfa-success.png)
 
 ---
@@ -212,9 +202,6 @@ Update:
 | Department | Finance           | IT              |
 | Job Title  | Financial Analyst | Systems Analyst |
 
-Capture the updated user profile.
-
-**Screenshot:**
 
 ![Mover User](../screenshots/joiner-mover-leaver/05-mover-user-attributes.png)
 
@@ -251,9 +238,6 @@ SG-IT-Users
 IT Access
 ```
 
-Capture the updated group membership.
-
-**Screenshot:**
 
 ![Mover Group](../screenshots/joiner-mover-leaver/06-mover-it-group-membership.png)
 
@@ -268,8 +252,6 @@ Navigate to:
 Add:
 
 `Dorothy Clark`
-
-Capture the new membership.
 
 ![Create User](../screenshots/joiner-mover-leaver/07-mover-it-group-membership.png)
 
