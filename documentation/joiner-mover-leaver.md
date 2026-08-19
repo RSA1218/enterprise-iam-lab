@@ -342,9 +342,7 @@ Remove Dorothy from SG-IT-Users organizational security groups.
 
 This removes group-based authorization.
 
-Capture:
-
-`leaver-group-access-removed.png`
+![Leaver Group](../screenshots/joiner-mover-leaver/09-leaver-group-access-removed.png)
 
 ---
 
@@ -356,9 +354,7 @@ Navigate to:
 
 Verify that Dorothy no longer has application access.
 
-Capture:
-
-`leaver-application-access-removed.png`
+![Leaver Application](../screenshots/joiner-mover-leaver/10-leaver-application-access-removed.png)
 
 ---
 
