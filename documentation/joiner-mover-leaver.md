@@ -404,42 +404,7 @@ Sign-in logs and workflow history provide evidence that access controls operated
 
 ---
 
-# 6. Recommended GitHub Structure
-
-Add the following to the IAM lab:
-
-```text
-documentation/
-├── joiner.md
-├── mover.md
-├── leaver.md
-└── jml-lifecycle.md
-
-screenshots/
-└── jml/
-    ├── joiner/
-    │   ├── joiner-user-created.png
-    │   ├── joiner-finance-group-membership.png
-    │   ├── joiner-saml-application-access.png
-    │   └── joiner-mfa-success.png
-    │
-    ├── mover/
-    │   ├── mover-user-attributes.png
-    │   ├── mover-finance-access-removed.png
-    │   ├── mover-it-group-membership.png
-    │   └── mover-application-access.png
-    │
-    └── leaver/
-        ├── leaver-account-disabled.png
-        ├── leaver-session-revocation.png
-        ├── leaver-group-access-removed.png
-        ├── leaver-application-access-removed.png
-        └── leaver-signin-blocked.png
-```
-
----
-
-# 7. Evidence-Based JML Demonstration
+# 6. Evidence-Based JML Demonstration
 
 The completed lab should tell one continuous story:
 
