@@ -334,33 +334,11 @@ This prevents the account from being used for new authentication.
 
 ![Account Disabled](../screenshots/joiner-mover-leaver/08-leaver-account-disabled.png)
 
-
 ---
 
-## 3.2 Revoke Active Sessions
+## 3.2 Remove Group Membership
 
-Use the available Microsoft Entra controls to revoke the user's active sessions/session credentials.
-
-The objective is to prevent an already-authenticated session from continuing to provide access.
-
-Capture the relevant administrative action if available.
-
-**Screenshot:**
-
-`leaver-session-revocation.png`
-
----
-
-## 3.3 Remove Group Membership
-
-Remove Dorothy from organizational security groups.
-
-For example:
-
-* `SG-Finance-Users`
-* `SG-IT-Users`
-
-depending on the scenario.
+Remove Dorothy from SG-IT-Users organizational security groups.
 
 This removes group-based authorization.
 
@@ -370,7 +348,7 @@ Capture:
 
 ---
 
-## 3.4 Remove Application Access
+## 3.3 Remove Application Access
 
 Navigate to:
 
@@ -384,7 +362,7 @@ Capture:
 
 ---
 
-## 3.5 Verify Authentication Is Blocked
+## 3.4 Verify Authentication Is Blocked
 
 Attempt to sign in as Dorothy.
 
