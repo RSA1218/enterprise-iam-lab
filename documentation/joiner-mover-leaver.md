@@ -335,6 +335,8 @@ This prevents the account from being used for new authentication.
 Capture:
 
 `leaver-account-disabled.png`
+![Account Disabled](../screenshots/joiner-mover-leaver/08-leaver-account-disabled.png)
+
 
 ---
 
