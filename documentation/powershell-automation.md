@@ -25,27 +25,26 @@ The automation covers:
 
 ### Step 1 — Connect to Microsoft Graph
 
-![Create User](../screenshots/power-automatinon/01-graph-connection.png)
-[01-graph-connection.png]
+![Graph Connection](../screenshots/power-automation/01-graph-connection.png)
 
 ### Step 2 — Create User
 
 The create-user.ps1 script accepts reusable parameters for
 first name, last name, department, and job title.
 
-[02-create-user-script.png]
+![Create User_Script](../screenshots/power-automation/02-create-user-script.png)
 
 ### Step 3 — Execute Provisioning
 
-[03-user-created.png]
+![User Created](../screenshots/power-automation/03-user-created.png)
 
 ### Step 4 — Verify User Attributes
 
-[04-user-attributes.png]
+![User Attributes](../screenshots/power-automation/04-user-attributes.png)
 
 ### Step 5 — Verify Group Assignment
 
-[05-finance-group-membership.png]
+![Finance Group](../screenshots/power-automation/05-finance-group-membership.png)
 
 ## Leaver Automation
 
