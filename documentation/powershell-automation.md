@@ -25,6 +25,7 @@ The automation covers:
 
 ### Step 1 — Connect to Microsoft Graph
 
+![Create User](../screenshots/power-automatinon/01-graph-connection.png)
 [01-graph-connection.png]
 
 ### Step 2 — Create User
