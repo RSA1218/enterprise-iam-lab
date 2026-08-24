@@ -12,7 +12,6 @@ The Enterprise IAM Lab demonstrates how identity and access controls can be desi
 
 The lab focuses on the following IAM capabilities:
 
-* Identity lifecycle management
 * Joiner–Mover–Leaver (JML) processes
 * User and group management
 * Role-Based Access Control (RBAC)
@@ -109,7 +108,7 @@ Access Removed
 
 Documentation:
 
-* [Identity Lifecycle Management](documentation/identity-lifecycle.md)
+* [Identity Lifecycle Management](documentation/joiner-mover-leaver.md)
 
 ---
 
