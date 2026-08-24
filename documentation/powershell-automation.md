@@ -54,23 +54,24 @@ The disable-user.ps1 script disables the account, revokes
 active sessions, and removes the user from IAM department
 security groups.
 
-[06-disable-user-script.png]
+![Disable User](../screenshots/powershell-automation/06-disable-user-script.png)
 
 ### Step 2 — Verify User Before Deprovisioning
 
-[07-user-before-disable.png]
+![User Before_Disable](../screenshots/powershell-automation/07-user-before-disable.png)
 
 ### Step 3 — Execute Leaver Automation
 
-[08-leaver-automation.png]
+![Leaver Automation](../screenshots/powershell-automation/08-leaver-automation.png)
 
 ### Step 4 — Verify Account Disabled
 
-[09-user-disabled.png]
+![User Disabled](../screenshots/powershell-automation/09-user-disabled.png)
 
 ### Step 5 — Verify Access Removal
 
-[10-group-membership-removed.png]
+![Group Membership](../screenshots/powershell-automation/10-group-membership-removed.png)
+
 
 ## Results
 
