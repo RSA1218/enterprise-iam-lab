@@ -313,33 +313,6 @@ Documentation:
 | Enterprise Applications | Application access management     |
 | SAML                    | Federated authentication          |
 | GitHub                  | Documentation and version control |
-
----
-
-# Repository Structure
-
-```text
-enterprise-iam-lab/
-│
-├── documentation/
-│   ├── conditional-access.md
-│   ├── identity-lifecycle.md
-│   ├── powershell-automation.md
-│   └── rbac.md
-│
-├── scripts/
-│   ├── create-user.ps1
-│   └── disable-user.ps1
-│
-├── screenshots/
-│   ├── conditional-access/
-│   ├── identity-lifecycle/
-│   ├── powershell-automation/
-│   └── rbac/
-│
-└── README.md
-```
-
 ---
 
 # IAM Skills Demonstrated
