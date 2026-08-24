@@ -138,7 +138,7 @@ The lab also demonstrates administrative role assignment and separation of privi
 
 Documentation:
 
-* [RBAC Documentation](documentation/rbac.md)
+* [RBAC Documentation](documentation/role-based-access.md)
 
 ---
 
@@ -206,7 +206,7 @@ A Finance user assigned to the application is required to complete MFA before ac
 
 Documentation:
 
-* [Conditional Access](documentation/conditional-access.md)
+* [Conditional Access](documentation/conditional-access-mfa.md)
 
 ---
 
@@ -240,7 +240,7 @@ This demonstrates an important enterprise security practice:
 
 Documentation:
 
-* [Conditional Access Documentation](documentation/conditional-access.md)
+* [Conditional Access Documentation](documentation/conditional-access-mfa.md)
 
 ---
 
