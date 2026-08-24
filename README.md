@@ -268,10 +268,10 @@ Example:
 
 ```powershell
 .\scripts\create-user.ps1 `
-    -FirstName "Alex" `
-    -LastName "Johnson" `
+    -FirstName "Charles" `
+    -LastName "Anderson" `
     -Department "Finance" `
-    -JobTitle "Financial Analyst"
+    -JobTitle "Financial Advisor"
 ```
 
 ### User Deprovisioning
@@ -290,7 +290,7 @@ Example:
 
 ```powershell
 .\scripts\disable-user.ps1 `
-    -UserPrincipalName "alex.johnson@yourtenant.onmicrosoft.com"
+    -UserPrincipalName "charles.anderson@PracticeIAMLab.onmicrosoft.com"
 ```
 
 Documentation:
