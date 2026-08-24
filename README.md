@@ -40,8 +40,8 @@ The lab uses Microsoft Entra ID as the centralized identity provider.
               |          +------+-------+         |
               |          |              |         |
               |       RBAC Groups   Department    |
-              |                      Groups        |
-              |                                      |
+              |                      Groups       |
+              |                                   |
               +------------------+-------------------+
                                  |
                          Conditional Access
